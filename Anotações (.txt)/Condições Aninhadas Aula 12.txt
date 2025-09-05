@@ -1,0 +1,78 @@
+	Contéudo Geral: *CONDIÇÕES AINHADAS*
+
+"Nessa aula, vamos aprender como criar estruturas condicionais aninhadas, 
+usando os comandos if.. elif.. else em programas Python
+
+Bifurcação | Quando o código segue caminhos diferentes dependendo de uma condição. 
+Como quando um programa verifica se você tem idade suficiente para algo e decide o que fazer com base nisso.
+
+Na aula 12 é apresentado que o caminho anterior que guanabara tinha feito (Mundo 1) ele tinha apenas
+2 caminhos usando apenas o (If e else). porém nesse é apresentado 3 caminhos, surgindo um novo comando além do if e else..
+o elif e é apresentado o seguinte código:
+ carro.siga()
+if carro.esquerda() [Se o carro seguir pra esquerda vai dar uma função:]
+	carro.siga()
+	carro.direita()
+	carro.siga()
+	carro.direita()
+	carro.esquerda()
+	carro.siga()
+	carro.direita()
+	carro.siga()
+
+elif carro.direita() [Se o carro seguir o segundo caminho que seria o no meio será apresentado como elif e tera sua propia função:]
+	carro.siga()
+	carro.esquerda()
+	carro.siga()
+	carro.esquerda()
+	carro.siga()
+		
+else	             [Se o carro seguir o último caminho será o else e ele tera sua propia função]
+	carro.siga()
+carro.pare() 
+
+logo apos isso em atividades teoricas gustavo apresenta o seguinte comando:
+
+nome = str(input("Qual o seu nome: ")) 
+
+if nome == 'Gustavo'
+	print("Que nome bonito!")
+
+print(f"Tenha um bom dia, {nome}!")
+
+O if ao lado do nome e o print se chama condição simples.. oq é uma condição simples e como usa-la?
+
+Uma condição simples em Python é quando usamos um único "If" para verificar algo sem precisar de "elif" ou "Else".
+
+ou seja, o código verifica uma única condição e executa um bloco de código apenas se for verdadeira.
+
+Um outro exemplo: 
+
+idade = 18  
+if idade >= 18:  
+    print("Você é maior de idade.")  
+
+Se a condição for falsa, o programa simplesmente segue em frente sem executar nada dentro do "if".
+
+se precisar de alternativas (como um senão como foi mostrado la em cima da anotação) ai já vira uma 
+condição composta com "else" ou um múltipla com "elif"
+
+Um codigo aninhado composto simples que eu fiz foi: 
+
+nome = str(input('Qual é o seu nome: '))
+
+if nome == 'Maycon' or nome == 'maycon': 
+    print('Que nome bonito!')
+    
+elif nome == 'Pedro' or nome == 'Maria' or nome == 'Paulo':
+    print('Seu nome é bem popular no Brasil.')
+
+elif nome in 'Ana Cláudia Jéssica Juliana':
+    print('Que belo nome feminino') 
+    
+else:
+    print('Seu nome é bem normal') 
+
+print(f'Tenha um bom dia, {nome}!') 
+
+x

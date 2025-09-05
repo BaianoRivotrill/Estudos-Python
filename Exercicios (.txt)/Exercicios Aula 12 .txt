@@ -1,0 +1,80 @@
+Exercicios pedidos durante aula 12:
+
+Primeira coisa apresentada e o contéudo principal da aula 12 são Condições aninhadas.. Abaixo
+tem o exercicio passado na aula 12: 
+
+nome = str(input('Qual é o seu nome: '))
+
+if nome == 'Maycon' or nome == 'maycon': 
+    print('Que nome bonito!')
+    
+elif nome == 'Pedro' or nome == 'Maria' or nome == 'Paulo':
+    print('Seu nome é bem popular no Brasil.')
+
+elif nome in 'Ana Cláudia Jéssica Juliana':
+    print('Que belo nome feminino') 
+    
+else:
+    print('Seu nome é bem normal') 
+
+print(f'Tenha um bom dia, {nome}!') 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+| Questionário 1 | "Escreva um programa para aprovar o empréstimo bancário para a compra de uma casa.
+O programa vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar.
+calcule o valor da prestação mensal, sabendo que ela não pode exceder 30% do salário ou então o empréstimo será negado"
+
+Minha resolução:
+#1. Obter dados de entrada
+
+valor_casa = float(input('Qual o valor da casa? R$: '))
+salario = float(input('Qual o seu salário? R$: ')) 
+anos = int(input('Em quantos anos você quer pagar? ')) 
+
+#2. Calcular o valor da prestação mensal
+parcelas = anos * 12
+prestacao = valor_casa/parcelas
+
+#3. Calcular 30% do salário
+limite_prestacao = salario * 0.30
+
+#4. Verificar se a prestação mensal é maior que 30% do salário
+if prestacao > limite_prestacao:
+    print('Emprestimo negado! O valor da prestação excede 30% do seu salario')
+else:
+    print(f'Empréstimo aprovado! O valor da prestação mensal será de R$ {prestacao}.')
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+| Questionário 2 | "Escreva um programa que leia um número inteiro qualque e peça para o usuário escolher qual será a base de conversão: 
+-1 para binário
+-2 para octal
+-3 para hexadecimal"
+
+Minha resolução: 
+
+#1 Solicita ao usuário um número inteiro
+
+num = int(input('Digite um número inteiro: '))
+
+# Exibe as opções de conversão
+print('Escolha a base de conversão: ')
+print('[1] Para Binário')
+print('[2] Para Octal')
+print('[3] Para Hexadecimal') 
+
+#2 Solicita a escolha do usuário
+
+opcao = int(input('Digite a opção desejada: '))
+
+#3 Converte o número para a base escolida
+
+if opcao == 1:
+    print(f'O número {num} em binario é: {bin(num)[2:]}')
+elif opcao == 2:
+    print(f'O número {num} em octal é: {oct(num)[2:]}')
+elif opcao == 3:
+    print(f'O número {num} em hexadecimal é: {hex(num)[2:]}')
+else:
+    print('Opção inválida. Escola 1,2 ou 3.') 

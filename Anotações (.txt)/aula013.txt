@@ -1,0 +1,70 @@
+Laços de repetição
+
+Ele explica passo a passo de como um personagem pode pegar uma maçã em blocos de grama (6)
+o passo a passo nomeia como Algoritmo = personagem quer comer uma maçã
+ele faz um exemplo de laço, no caso um laço de repetição e pra que o personagem não caia do mapa
+ele nomeia cada quadradinho pra limitar que ele caia, no caso de 0-10. Ele comanda que tenha um contador
+de um a 10 para que os passos cheguem no lugar certo sem passar, ao chegar em 10 ele finaliza e disponibiliza
+colocar outro codigo, no caso seria de pegar a maçã. 
+
+Em resumo isso é Laço de repetição ou interação
+no caso seria um laço com variavel de controle 
+
+Exemplo: laco c intervalo(1,10)
+// O "c" seria uma variavel de controle (lembrando que você pode nomear a variavel da forma que
+você bem quiser) 
+
+Exemplo 2: laco c no intervalo(1,10)
+	      passo
+	   pega
+// No caso a gente daria o comando de "passo" que teria que ser mais pra dentro da linha de codigo, pra que ele tenha
+a função apenas de passos, o "pega" seria um comando fora do laço... então assim que os passos acabassem, executaria o
+outro comando que esta fora do primeiro, que seria o pega(andou 10 passos, pega o item)
+
+//Pra colocar esse comando do jeito certo seria:
+
+ "for c in ranged(1,10):
+    passo
+  pega"
+// isso vai fazer o contador no intervalo de 1-10
+
+O outro exemplo que o guanabara dá, seria 10 blocos mas a cada 2 tem um buraco. Então tem que colocar um comando pra dar
+2 passos e 1 pula, a sequencia seria de 3 vezes dando passo e pulo. logo depois um passo e pega
+
+no codigo ficaria:
+
+ "laço c no intervalo(0,3)
+     passo
+     pula
+  passo 
+  pega
+
+passando pra codigo:
+
+"for c in ranged(0,3)
+   passo
+   pula
+ passo
+ pega"
+
+Guanabara passa outro exemplo igual a o anterior de andar e pular, só que dessa vez há moedas no caminho, então ele tem que ser 
+obrigado a pegar cada moedas dessa.. mas tem um problema, no primeiro e terceiro caminho há moeda, mas no segundo não.
+Temos que criar um codigo na qual ele identifique a moeda e automaticamente pegue-a (usando if)
+
+"laco c no intervalo(0,3)
+   if moeda:
+      pega
+   passo
+   pula
+ passo
+ pega"
+
+em codigo:
+"for c in ranged(0,3)
+   if moeda:
+      pega
+   else:
+   passo 
+   pula
+ passo
+ pega"
