@@ -1,0 +1,10 @@
+a = input("Digite algo: ")
+
+print(f'É alfabético: {a.isalpha()}') 
+print(f'É um número: {a.isnumeric()}')
+print(f'Tudo está em maiúsculo: {a.isupper()}')
+print(f'Tudo está em minúsculo: {a.islower()}')
+print(f'Tem espaço: {a.isspace()}')
+print(f'É um decimal: {a.isdecimal()}') 
+print(f'É um identificador: {a.isidentifier()}')     
+print(f'É um digito: {a.isdigit()}') 
